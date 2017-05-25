@@ -14,4 +14,6 @@
         completions."
     </string>
     <string name="se_connecter">Se connecter</string>
+    <string name="radiobutton">RadioButton</string>
+    <string name="pr_nom">Prénom</string>
 </resources>

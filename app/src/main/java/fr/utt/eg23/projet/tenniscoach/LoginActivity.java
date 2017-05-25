@@ -3,6 +3,7 @@ package fr.utt.eg23.projet.tenniscoach;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -92,6 +93,19 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
+
+        // Liaison entre l’objet graphique R.id.button et la variable listeCourseButton
+        final Button inscriptionButton = (Button) findViewById(R.id.button);
+// Création d’un évènement qui attend un clic sur le bouton
+        inscriptionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { // fonction déclenchée sur le clic du bouton
+                // Création d’une activité associée à l’exécution de MaGestionListe.class
+                Intent intent = new Intent(LoginActivity.this, Inscription.class);
+                // Exécution de l’activité : ouverture de la fenêtre
+                startActivity(intent);
+            }
+        });
     }
 
     private void populateAutoComplete() {
