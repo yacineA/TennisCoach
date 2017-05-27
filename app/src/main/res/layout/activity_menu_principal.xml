@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.utt.eg23.projet.tenniscoach.MenuPrincipal">
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="254dp"
+        android:layout_height="76dp"
+        android:text="Séance d'une heure"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="285dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="254dp"
+        android:layout_height="76dp"
+        android:text="Afficher les résultats précedents"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="381dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="254dp"
+        android:layout_height="76dp"
+        android:text="Coup à travailler"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="356dp"
+        android:layout_height="58dp"
+        android:text="Bonjour (utilisateur)! Veillez choisir votre programme d'aujourd'hui"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="15dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="254dp"
+        android:layout_height="76dp"
+        android:selectAllOnFocus="false"
+        android:text="Exercice Spécifique"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="97dp" />
+</android.support.constraint.ConstraintLayout>

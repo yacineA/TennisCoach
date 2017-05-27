@@ -16,4 +16,5 @@
     <string name="se_connecter">Se connecter</string>
     <string name="radiobutton">RadioButton</string>
     <string name="pr_nom">Prénom</string>
+    <string name="title_activity_menu_principal">MenuPrincipal</string>
 </resources>
