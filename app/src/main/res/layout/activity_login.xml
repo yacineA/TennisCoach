@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="fr.utt.eg23.projet.tenniscoach.LoginActivity">
+    tools:context="fr.utt.eg23.projet.tenniscoach.LoginActivity"
+    android:weightSum="1">
 
     <!-- Login progress -->
 
@@ -20,10 +21,15 @@
         android:layout_marginBottom="8dp"
         android:visibility="gone" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:orientation="horizontal"></LinearLayout>
+
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="220dp">
 
         <LinearLayout
             android:id="@+id/email_login_form"
@@ -62,14 +68,6 @@
 
             </android.support.design.widget.TextInputLayout>
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:text="Se connecter avec Facebook ou Google"
-                android:textAlignment="center"
-                tools:ignore="HardcodedText" />
-
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
@@ -86,4 +84,20 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.10">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Se connecter avec Facebook ou Google"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+    </LinearLayout>
 </LinearLayout>
