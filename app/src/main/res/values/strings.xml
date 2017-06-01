@@ -16,4 +16,9 @@
     <string name="se_connecter">Se connecter</string>
     <string name="radiobutton">RadioButton</string>
     <string name="pr_nom">Prénom</string>
+    <string name="bonjour_veuillez_choisir_votre_programme_d_aujourd_hui">Bonjour, Veuillez choisir votre programme d\'aujourd\'hui</string>
+    <string name="afficher_les_r_sultats_pr_c_dents">Afficher les résultats précédents</string>
+    <string name="coup_travailler">Coup à travailler</string>
+    <string name="exercice_sp_cifique">Exercice spécifique</string>
+    <color name="bgcolor">#ff6666</color>
 </resources>
