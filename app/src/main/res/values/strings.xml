@@ -20,5 +20,6 @@
     <string name="afficher_les_r_sultats_pr_c_dents">Afficher les résultats précédents</string>
     <string name="coup_travailler">Coup à travailler</string>
     <string name="exercice_sp_cifique">Exercice spécifique</string>
+    <string name="valider_coups">Valider</string>
     <color name="bgcolor">#ff6666</color>
 </resources>
