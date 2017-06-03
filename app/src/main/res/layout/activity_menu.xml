@@ -19,7 +19,7 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/bonjour_veuillez_choisir_votre_programme_d_aujourd_hui"
+            android:text="bonjour_veuillez_choisir_votre_programme_d_aujourd_hui"
             android:textAlignment="center"
             android:textAllCaps="true"
             tools:ignore="MissingConstraints"
@@ -31,14 +31,14 @@
             android:layout_width="match_parent"
             android:layout_height="88dp"
             android:layout_weight="0.01"
-            android:text="@string/exercice_sp_cifique" />
+            android:text="exercice_sp_cifique" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.14"
-            android:text="@string/coup_travailler" />
+            android:text="coup_travailler" />
 
         <Button
             android:id="@+id/button4"
@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.16"
-            android:text="@string/afficher_les_r_sultats_pr_c_dents" />
+            android:text="afficher_les_r_sultats_pr_c_dents" />
 
     </LinearLayout>
 
