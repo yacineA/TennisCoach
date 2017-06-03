@@ -9,109 +9,77 @@
     tools:layout_editor_absoluteX="0dp">
 
     <LinearLayout
-        android:layout_width="395dp"
-        android:layout_height="587dp"
+        android:layout_width="379dp"
+        android:layout_height="553dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="41dp"
+        tools:layout_editor_absoluteX="17dp"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="91dp"
+            android:layout_height="88dp"
             android:orientation="horizontal"
             tools:ignore="UselessLeaf">
 
         </LinearLayout>
 
-        <EditText
-            android:id="@+id/email"
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:text="E-mail"
-            tools:ignore="HardcodedText" />
+            android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPassword" />
-
-        <EditText
-            android:id="@+id/nom"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Nom"
-            tools:ignore="HardcodedText" />
-
-        <EditText
-            android:id="@+id/prenom"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="@string/pr_nom" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button5"
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Button"
-                tools:ignore="HardcodedText,InefficientWeight" />
+                android:hint="Email"
+                tools:ignore="HardcodedText" />
+        </android.support.design.widget.TextInputLayout>
 
-            <LinearLayout
-                android:layout_width="204dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp">
 
-                <RadioButton
-                    android:id="@+id/homme"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Homme"
-                    tools:ignore="HardcodedText" />
-
-            </LinearLayout>
-
-            <LinearLayout
+            <EditText
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:hint="Mot de passe"
+                tools:ignore="HardcodedText" />
+        </android.support.design.widget.TextInputLayout>
 
-                <RadioButton
-                    android:id="@+id/femme"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Femme"
-                    tools:ignore="HardcodedText" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp">
 
-            </LinearLayout>
-        </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nom complet"
+                tools:ignore="HardcodedText" />
+
+        </android.support.design.widget.TextInputLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="69dp"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="0.77"
                 android:text="Valider"
                 tools:ignore="HardcodedText,InefficientWeight" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Déja enregistré! Se connecter"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
