@@ -25,6 +25,7 @@
             android:layout_height="wrap_content">
 
             <EditText
+                android:textColor="@color/background"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email"
@@ -36,6 +37,7 @@
             android:layout_height="62dp">
 
             <EditText
+                android:textColor="@color/background"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Mot de passe"
@@ -47,6 +49,7 @@
             android:layout_height="61dp">
 
             <EditText
+                android:textColor="@color/background"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nom complet"

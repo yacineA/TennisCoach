@@ -11,6 +11,8 @@ tools:context="fr.utt.eg23.projet.tenniscoach.ListeExercices">
 
 
 <ListView
+    android:textColor="@color/background"
+
     android:id="@+id/checkable_list"
     android:layout_width="wrap_content"
     android:layout_height="521dp" >
