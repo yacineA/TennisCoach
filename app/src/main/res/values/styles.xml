@@ -8,7 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="background">@color/background</item>
     </style>
-    <style name="MyCheckBox" parent="Theme.AppCompat.NoActionBar">
+    <style name="CustomCheckBox">
+        <item name="android:theme">@style/MyCheckBox</item>
+    </style>
+    <style name="MyCheckBox" >
         <item name="colorControlNormal">#fff</item>   <!-- normal border color change as you wish -->
     </style>
 </resources>

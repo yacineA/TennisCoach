@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android" style="@style/CustomCheckBox"
     android:id="@+id/txt_lan"
     android:layout_width="400dip"
     android:layout_height="60dip"
@@ -13,6 +13,7 @@
     android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
     android:paddingLeft="5dip"
     android:gravity="center_vertical"
+
 
 
     />
