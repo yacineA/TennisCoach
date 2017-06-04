@@ -30,29 +30,34 @@
             android:layout_width="382dp"
             android:layout_height="100dp"
             android:text="@string/exercice_sp_cifique"
-            android:layout_weight="0.25" />
+            android:textStyle="bold"
+            android:textSize="20dp"
+            tools:ignore="SpUsage" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="382dp"
             android:layout_height="100dp"
             android:text="@string/coup_travailler"
-            android:layout_weight="0.08" />
+            android:textStyle="bold"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/button4"
             android:layout_width="382dp"
             android:layout_height="100dp"
             android:text="Séance d'une heure"
-            tools:ignore="HardcodedText"
-            android:layout_weight="0.07" />
+            tools:ignore="HardcodedText,SpUsage"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
 
         <Button
             android:id="@+id/button5"
             android:layout_width="382dp"
             android:layout_height="100dp"
             android:text="@string/afficher_les_r_sultats_pr_c_dents"
-            android:layout_weight="0.12" />
+            android:textStyle="bold"
+            android:textSize="20sp" />
 
     <Button
         android:id="@+id/button7"

@@ -21,5 +21,7 @@
     <string name="coup_travailler">Coup à travailler</string>
     <string name="exercice_sp_cifique">Exercice spécifique</string>
     <string name="valider_coups">Valider</string>
+    <string name="s_inscrire">S\'inscrire</string>
+    <string name="se_connecter_avec_facebook_ou_google">Se connecter avec Facebook ou Google</string>
     <color name="bgcolor">#ff6666</color>
 </resources>
