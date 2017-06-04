@@ -9,15 +9,16 @@ android:paddingRight="@dimen/activity_horizontal_margin"
 android:paddingTop="@dimen/activity_vertical_margin"
 tools:context="fr.utt.eg23.projet.tenniscoach.ListeExercices">
 
+    <ListView
+        android:id="@+id/checkable_list"
+        android:layout_width="wrap_content"
+        android:layout_height="521dp"
+        android:choiceMode="multipleChoice"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="1dp"
+        android:textColor="@android:color/white">
 
-<ListView
-    android:textColor="@color/background"
-
-    android:id="@+id/checkable_list"
-    android:layout_width="wrap_content"
-    android:layout_height="521dp" >
-
-</ListView>
+    </ListView>
 
 <Button
     android:id="@+id/btn"

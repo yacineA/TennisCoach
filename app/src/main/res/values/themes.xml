@@ -3,6 +3,8 @@
     <style name="MyTheme" parent="AppTheme">
         <item name="android:windowBackground">@drawable/bg</item>
         <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+        <item name="android:textColorHint">@color/background</item>
+
 
     </style>
     <style name="MyTextViewStyle" parent="android:Widget.TextView">

@@ -43,13 +43,14 @@
                 android:layout_height="wrap_content">
 
                 <AutoCompleteTextView
-                    android:textColor="@color/background"
                     android:id="@+id/email"
+                    style="@android:style/ThemeOverlay.Material.Light"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress"
-                    android:maxLines="1" />
+                    android:maxLines="1"
+                    android:textColor="@color/background" />
 
             </android.support.design.widget.TextInputLayout>
 

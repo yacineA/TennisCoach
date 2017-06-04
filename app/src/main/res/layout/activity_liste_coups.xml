@@ -12,10 +12,13 @@
 
 
     <ListView
-        android:textColor="@color/background"
+        android:textColor="@android:color/white"
         android:id="@+id/checkable_list"
         android:layout_width="wrap_content"
-        android:layout_height="521dp" >
+        android:layout_height="521dp"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="1dp"
+        android:choiceMode="multipleChoice">
 
     </ListView>
 
