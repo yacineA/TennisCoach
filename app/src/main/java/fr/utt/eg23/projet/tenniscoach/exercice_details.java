@@ -46,6 +46,7 @@ public class exercice_details extends AppCompatActivity {
          TextView descExo=(TextView)findViewById(R.id.descExo);
 
         nomExo.setText(exo.getName());
+        
         descExo.setText(exo.getDesc());
 
         timerTextView = (TextView) findViewById(R.id.timerTextView);
