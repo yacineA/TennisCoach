@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/txt_lan"
+    android:id="@+id/nomExo"
     android:layout_width="400dip"
-    android:layout_height="60dip"
+    android:layout_height="80dip"
     android:layout_alignParentRight="true"
     android:layout_gravity="center_vertical"
     android:checkMark="@null"
-    android:drawableLeft="?android:attr/listChoiceIndicatorSingle"
     android:gravity="center_vertical"
     android:padding="5dp"
     android:paddingLeft="5dip"
+    android:textAlignment="center"
     android:textColor="@color/background"
+
+
+    android:textSize="16sp"
     android:textStyle="bold"
-
-
     tools:ignore="RtlHardcoded,RtlSymmetry" />
-
-
-

@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import fr.utt.eg23.projet.tenniscoach.ListeCoups;
 
 public class menu extends AppCompatActivity {
 
@@ -22,7 +21,7 @@ public class menu extends AppCompatActivity {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
                 // Création d’une activité associée à l’exécution de MaGestionListe.class
-                Intent intent = new Intent(menu.this, Exercice.class);
+                Intent intent = new Intent(menu.this, ListeExercices.class);
                 // Exécution de l’activité : ouverture de la fenêtre
                 startActivity(intent);
             }

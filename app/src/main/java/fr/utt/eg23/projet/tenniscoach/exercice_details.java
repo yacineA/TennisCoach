@@ -1,14 +1,14 @@
 package fr.utt.eg23.projet.tenniscoach;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class coup_details extends AppCompatActivity {
+public class exercice_details extends AppCompatActivity {
 
     TextView timerTextView;
     long startTime = 0;
@@ -37,19 +37,16 @@ public class coup_details extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_coup_details);
+        setContentView(R.layout.activity_exercice_details);
 
         Bundle bundle = getIntent().getExtras();
-        Coup cp = bundle.getParcelable("utt.fr.coup");
+        Exercice exo= bundle.getParcelable("utt.fr.exo");
 
-         TextView nomCoup=(TextView)findViewById(R.id.nomExo);
-         TextView descCoup=(TextView)findViewById(R.id.descExo);
+        TextView nomExo=(TextView)findViewById(R.id.nomExo);
+         TextView descExo=(TextView)findViewById(R.id.descExo);
 
-        String d=cp.getDesc();
-        descCoup.setText(d);
-
-        String n=cp.getName();
-        nomCoup.setText(n);
+        nomExo.setText(exo.getName());
+        descExo.setText(exo.getDesc());
 
         timerTextView = (TextView) findViewById(R.id.timerTextView);
 
@@ -78,7 +75,7 @@ public class coup_details extends AppCompatActivity {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
                 // Création d’une activité associée à l’exécution de MaGestionListe.class
-                Intent intent = new Intent(coup_details.this, Statistiques.class);
+                Intent intent = new Intent(exercice_details.this, Statistiques.class);
                 // Exécution de l’activité : ouverture de la fenêtre
                 startActivity(intent);
             }

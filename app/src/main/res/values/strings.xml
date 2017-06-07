@@ -30,4 +30,5 @@
     <string name="action_settings">Settings</string>
     <string name="title_coup_list">Coups</string>
     <string name="title_coup_detail">Coup Detail</string>
+    <string name="title_activity_coup_details">coup_details</string>
 </resources>

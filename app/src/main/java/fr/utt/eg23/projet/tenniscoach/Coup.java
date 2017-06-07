@@ -8,10 +8,15 @@ import android.os.Parcelable;
  */
 
 public class Coup implements Parcelable {
-    public String name;
+    public String name, description;
 
     protected Coup(Parcel in) {
-        name = in.readString();
+        String[] data = new String[2];
+
+        in.readStringArray(data);
+        // the order needs to be the same as in writeToParcel() method
+        this.name = data[0];
+        this.description = data[1];
     }
 
     public static final Creator<Coup> CREATOR = new Creator<Coup>() {
@@ -33,12 +38,24 @@ public class Coup implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(name);
+        dest.writeStringArray(new String[] {
+                this.name,
+                this.description});
     }
-    public Coup (String name){
+
+    public Coup (String name, String desc){
+        this.description=desc;
         this.name=name;
     }
+    public String getName(){
+        return this.name;
+    }
+
+
     public String toString(){
         return this.name;
+    }
+    public String getDesc(){
+        return this.description;
     }
 }
