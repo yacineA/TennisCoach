@@ -25,7 +25,9 @@
         <activity android:name=".Inscription" />
         <activity android:name=".menu" />
         <activity android:name=".ListeExercices" />
-        <activity android:name=".ListeCoups"></activity>
+        <activity android:name=".ListeCoups" />
+        <activity android:name=".Exercice"></activity>
+        <activity android:name=".Statistiques" />
     </application>
 
 </manifest>

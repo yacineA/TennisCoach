@@ -21,7 +21,7 @@ public class menu extends AppCompatActivity {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
                 // Création d’une activité associée à l’exécution de MaGestionListe.class
-                Intent intent = new Intent(menu.this, ListeExercices.class);
+                Intent intent = new Intent(menu.this, Exercice.class);
                 // Exécution de l’activité : ouverture de la fenêtre
                 startActivity(intent);
             }

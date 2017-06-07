@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.utt.eg23.projet.tenniscoach.Exercice">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="380dp"
+        android:layout_height="57dp"
+        android:text="(Description de l'exercice)"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="19dp"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="193dp"
+        android:layout_height="91dp"
+        android:text="Démarrer"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="186dp"
+        android:layout_below="@+id/timerTextView"
+        android:layout_alignLeft="@+id/button11"
+        android:layout_alignStart="@+id/button11"
+        android:layout_marginTop="46dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="193dp"
+        android:layout_height="91dp"
+        android:text="Arrêter l'exercice"
+        app:layout_constraintTop_toBottomOf="@+id/button10"
+        tools:layout_editor_absoluteX="96dp"
+        android:layout_below="@+id/button10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COUNTER"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="112dp"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
