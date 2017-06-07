@@ -2,6 +2,7 @@
 
 package fr.utt.eg23.projet.tenniscoach;
 
+        import android.content.Intent;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.view.View;
@@ -25,15 +26,21 @@ package fr.utt.eg23.projet.tenniscoach;
 
 
         import java.util.ArrayList;
+        import java.util.List;
 
 public class ListeCoups extends AppCompatActivity {
 
     ListView mListView;
-    private String[] coups = new String[]{
-            "Coup1", "Coup2", "Coup3", "Coup4", "Coup5", "Coup6",
-            "Coup8", "Coup9", "Coup10", "Coup11", "Coup12", "Coup13",
-            "Coup14", "Coup15"
-    };
+
+    Coup coup1 = new Coup("coup1");
+    Coup coup2 = new Coup("coup2");
+    Coup coup3 = new Coup("coup3");
+    Coup coup4 = new Coup("coup4");
+
+    public List<Coup> coups= new ArrayList<Coup>();
+
+
+
     public ArrayList<String> selectedItems= new ArrayList<String>();
 
 
@@ -41,6 +48,10 @@ public class ListeCoups extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_liste_coups);
+        coups.add(coup1);
+        coups.add(coup2);
+        coups.add(coup3);
+        coups.add(coup4);
     }
 
 
@@ -51,20 +62,19 @@ public class ListeCoups extends AppCompatActivity {
         //set multiple selection mode
         chl.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         //supply data itmes to ListView
-        ArrayAdapter<String> aa=new ArrayAdapter<String>(this,R.layout.rowlayout,R.id.txt_lan,coups);
+        ArrayAdapter<Coup> aa=new ArrayAdapter<Coup>(this,R.layout.rowlayout,coups);
         chl.setAdapter(aa);
         //set OnItemClickListener
-        chl.setOnItemClickListener(new OnItemClickListener(){
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // selected item
-                String selectedItem = ((TextView) view).getText().toString();
-                if(selectedItems.contains(selectedItem))
-                    selectedItems.remove(selectedItem); //remove deselected item from the list of selected items
-                else
-                    selectedItems.add(selectedItem); //add selected item to the list of selected items
 
+        chl.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> a,
+                                    View v, int position, long id) {
+                Coup city = (Coup) a.getItemAtPosition(position);
+                Intent intent = new Intent(v.getContext(), coup_details.class);
+                intent.putExtra("com.example.cities.City", city);
+                startActivity(intent);
             }
-
         });
     }
 
