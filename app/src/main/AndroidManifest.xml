@@ -27,6 +27,11 @@
         <activity android:name=".ListeExercices" />
         <activity android:name=".ListeCoups" />
         <activity android:name=".coup_details"></activity>
+        <activity android:name=".Exercice"></activity>
+        <activity
+            android:name=".Statistiques"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>
