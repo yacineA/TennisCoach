@@ -49,7 +49,7 @@ public class ListeCoups extends AppCompatActivity {
         //create an instance of ListView
         ListView chl=(ListView) findViewById(R.id.checkable_list);
         //set multiple selection mode
-        chl.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
+        chl.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         //supply data itmes to ListView
         ArrayAdapter<String> aa=new ArrayAdapter<String>(this,R.layout.rowlayout,R.id.txt_lan,coups);
         chl.setAdapter(aa);

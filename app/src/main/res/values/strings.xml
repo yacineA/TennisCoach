@@ -24,4 +24,8 @@
     <string name="s_inscrire">S\'inscrire</string>
     <string name="se_connecter_avec_facebook_ou_google">Se connecter avec Facebook ou Google</string>
     <color name="bgcolor">#ff6666</color>
+
+    <string name="title_activity_menu_principal">MenuPrincipal</string>
+    <string name="title_activity_statistiques">Statistiques</string>
+    <string name="action_settings">Settings</string>
 </resources>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android" style="@style/CustomCheckBox"
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/txt_lan"
     android:layout_width="400dip"
     android:layout_height="60dip"
+    android:layout_alignParentRight="true"
     android:layout_gravity="center_vertical"
     android:checkMark="@null"
+    android:drawableLeft="?android:attr/listChoiceIndicatorSingle"
+    android:gravity="center_vertical"
     android:padding="5dp"
+    android:paddingLeft="5dip"
     android:textColor="@color/background"
     android:textStyle="bold"
-    android:layout_alignParentRight="true"
-    android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
-    android:paddingLeft="5dip"
-    android:gravity="center_vertical"
 
 
-
-    />
+    tools:ignore="RtlHardcoded,RtlSymmetry" />
 
 
 

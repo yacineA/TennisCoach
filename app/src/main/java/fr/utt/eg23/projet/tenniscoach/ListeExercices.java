@@ -26,7 +26,7 @@ public class ListeExercices extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_liste_exercices);
+        setContentView(R.layout.activity_liste_coups);
     }
 
 
@@ -35,7 +35,7 @@ public class ListeExercices extends AppCompatActivity {
         //create an instance of ListView
         ListView chl=(ListView) findViewById(R.id.checkable_list);
         //set multiple selection mode
-        chl.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
+        chl.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         //supply data itmes to ListView
         ArrayAdapter<String> aa=new ArrayAdapter<String>(this,R.layout.rowlayout,R.id.txt_lan,exos);
         chl.setAdapter(aa);
