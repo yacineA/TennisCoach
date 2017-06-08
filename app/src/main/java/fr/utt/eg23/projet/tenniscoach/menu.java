@@ -44,10 +44,24 @@ public class menu extends AppCompatActivity {
 
 
 
-        /* Liaison entre l’objet graphique R.id.button et la variable listeCourseButton
-        final Button listeExos = (Button) findViewById(R.id.button9);
+        final Button seance = (Button) findViewById(R.id.button4);
 // Création d’un évènement qui attend un clic sur le bouton
-        listeExos.setOnClickListener(new View.OnClickListener() {
+        seance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { // fonction déclenchée sur le clic du bouton
+                // Création d’une activité associée à l’exécution de MaGestionListe.class
+                Intent intent = new Intent(menu.this, seance_heure.class);
+                // Exécution de l’activité : ouverture de la fenêtre
+                startActivity(intent);
+            }
+        });
+
+
+
+        // Liaison entre l’objet graphique R.id.button et la variable listeCourseButton
+        final Button resultats = (Button) findViewById(R.id.button5);
+// Création d’un évènement qui attend un clic sur le bouton
+        resultats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
                 // Création d’une activité associée à l’exécution de MaGestionListe.class
@@ -58,19 +72,6 @@ public class menu extends AppCompatActivity {
         });
 
 
-
-        // Liaison entre l’objet graphique R.id.button et la variable listeCourseButton
-        final Button listeExos = (Button) findViewById(R.id.button9);
-// Création d’un évènement qui attend un clic sur le bouton
-        listeExos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { // fonction déclenchée sur le clic du bouton
-                // Création d’une activité associée à l’exécution de MaGestionListe.class
-                Intent intent = new Intent(menu.this, ListeExercices.class);
-                // Exécution de l’activité : ouverture de la fenêtre
-                startActivity(intent);
-            }
-        });*/
 
     }
 

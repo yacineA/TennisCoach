@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.utt.eg23.projet.tenniscoach.seance_heure">
+
+    <TextView
+        android:id="@+id/nomExo"
+        android:layout_width="380dp"
+        android:layout_height="57dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:text="Séance d'une heure"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="19dp" />
+
+    <TextView
+        android:id="@+id/descExo"
+
+        android:layout_width="380dp"
+        android:layout_height="57dp"
+
+        android:layout_above="@+id/timerTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nomExo"
+        android:text="Cette séance comporte une séquence d'exercices et de coups."
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="193dp"
+        android:layout_height="91dp"
+        android:text="Démarrer"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="186dp"
+        tools:ignore="HardcodedText"
+        android:layout_marginBottom="35dp"
+        android:layout_above="@+id/button11"
+        android:layout_alignLeft="@+id/button11"
+        android:layout_alignStart="@+id/button11" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="193dp"
+        android:layout_height="91dp"
+        android:text="Statistiques"
+        app:layout_constraintTop_toBottomOf="@+id/button10"
+        tools:layout_editor_absoluteX="96dp"
+        tools:ignore="HardcodedText"
+        android:layout_marginBottom="81dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/button10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="19dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="40sp"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+</RelativeLayout>

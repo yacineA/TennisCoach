@@ -29,11 +29,12 @@
         <activity android:name=".exercice_details" />
         <activity
             android:name=".Statistiques"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".coup_details"
             android:label="@string/title_activity_coup_details"
-            android:theme="@style/MyTheme.NoActionBar"></activity>
+            android:theme="@style/MyTheme.NoActionBar" />
+        <activity android:name=".seance_heure"></activity>
     </application>
 
 </manifest>
