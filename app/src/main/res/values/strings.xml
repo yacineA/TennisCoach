@@ -31,4 +31,6 @@
     <string name="title_coup_list">Coups</string>
     <string name="title_coup_detail">Coup Detail</string>
     <string name="title_activity_coup_details">coup_details</string>
+    <string name="title_activity_comparaison_stats">Comparaison_stats</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>

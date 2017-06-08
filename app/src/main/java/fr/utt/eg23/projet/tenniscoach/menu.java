@@ -15,7 +15,7 @@ public class menu extends AppCompatActivity {
 
 
         // Liaison entre l’objet graphique R.id.button et la variable listeCourseButton
-        final Button listeExos = (Button) findViewById(R.id.button9);
+        final Button listeExos = (Button) findViewById(R.id.button_exercice_specifique);
 // Création d’un évènement qui attend un clic sur le bouton
         listeExos.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,19 +59,17 @@ public class menu extends AppCompatActivity {
 
 
         // Liaison entre l’objet graphique R.id.button et la variable listeCourseButton
-        final Button resultats = (Button) findViewById(R.id.button5);
-// Création d’un évènement qui attend un clic sur le bouton
-        resultats.setOnClickListener(new View.OnClickListener() {
+        final Button resultatsPrecedents = (Button) findViewById(R.id.button5);
+    // Création d’un évènement qui attend un clic sur le bouton
+        resultatsPrecedents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
                 // Création d’une activité associée à l’exécution de MaGestionListe.class
-                Intent intent = new Intent(menu.this, ListeExercices.class);
+                Intent intent = new Intent(menu.this, Comparaison_stats.class);
                 // Exécution de l’activité : ouverture de la fenêtre
                 startActivity(intent);
             }
         });
-
-
 
     }
 

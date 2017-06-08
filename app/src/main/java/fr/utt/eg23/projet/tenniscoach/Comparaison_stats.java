@@ -1,7 +1,8 @@
 package fr.utt.eg23.projet.tenniscoach;
 
-import android.content.Intent;
 import android.support.design.widget.TabLayout;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -10,18 +11,22 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+import android.view.ViewGroup;
 
-import fr.utt.eg23.projet.tenniscoach.tabs.Comparaison_ensemble;
-import fr.utt.eg23.projet.tenniscoach.tabs.Comparaison_joueurs;
+import android.widget.TextView;
+
+import fr.utt.eg23.projet.tenniscoach.tabs.Tab2_ensemble_comparaison;
+import fr.utt.eg23.projet.tenniscoach.tabs.Tab2_joueur1_comparaison;
+import fr.utt.eg23.projet.tenniscoach.tabs.Tab2_joueur2_comparaison;
 import fr.utt.eg23.projet.tenniscoach.tabs.Tab_ensemble;
 import fr.utt.eg23.projet.tenniscoach.tabs.Tab_joueur1;
 import fr.utt.eg23.projet.tenniscoach.tabs.Tab_joueur2;
 
-public class Statistiques extends AppCompatActivity {
+public class Comparaison_stats extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -31,7 +36,7 @@ public class Statistiques extends AppCompatActivity {
      * may be best to switch to a
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
-    private SectionsPagerAdapter mSectionsPagerAdapter;
+    private Comparaison_stats.SectionsPagerAdapter2 mSectionsPagerAdapter;
 
     /**
      * The {@link ViewPager} that will host the section contents.
@@ -41,13 +46,13 @@ public class Statistiques extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_statistiques);
+        setContentView(R.layout.activity_comparaison_stats);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
-        mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
+        mSectionsPagerAdapter = new Comparaison_stats.SectionsPagerAdapter2(getSupportFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
@@ -91,9 +96,9 @@ public class Statistiques extends AppCompatActivity {
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
      */
-    public class SectionsPagerAdapter extends FragmentPagerAdapter {
+    public class SectionsPagerAdapter2 extends FragmentPagerAdapter {
 
-        public SectionsPagerAdapter(FragmentManager fm) {
+        public SectionsPagerAdapter2(FragmentManager fm) {
             super(fm);
         }
 
@@ -102,13 +107,13 @@ public class Statistiques extends AppCompatActivity {
             //SWITCH ON FRAGMENTS
             switch (position) {
                 case 0:
-                    Tab_joueur1 tab = new Tab_joueur1();
+                    Tab2_joueur1_comparaison tab = new Tab2_joueur1_comparaison();
                     return tab;
                 case 1:
-                    Tab_joueur2 tab2 = new Tab_joueur2();
+                    Tab2_joueur2_comparaison tab2 = new Tab2_joueur2_comparaison();
                     return tab2;
                 case 2:
-                    Tab_ensemble tab3 = new Tab_ensemble();
+                    Tab2_ensemble_comparaison tab3 = new Tab2_ensemble_comparaison();
                     return tab3;
                 default:
                     return null;

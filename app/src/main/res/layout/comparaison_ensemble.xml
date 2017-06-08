@@ -6,60 +6,70 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="fr.utt.eg23.projet.tenniscoach.Statistiques">
+    tools:context="fr.utt.eg23.projet.tenniscoach.Comparaison_stats">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_above="@+id/button_exercice_specifique">
+        android:layout_height="425dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/button_exercice_specifique"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:baselineAligned="false"
+            android:clipChildren="false"
             android:orientation="vertical"
             android:scrollbars="horizontal">
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:orientation="vertical"
-                android:padding="18dp"
+                android:padding="15dp"
                 android:paddingBottom="0dp"
-                android:paddingEnd="5dp"
+                android:paddingEnd="8dp"
                 android:paddingLeft="0dp"
                 android:paddingRight="0dp"
+                android:paddingStart="0dp"
                 android:paddingTop="0dp"
                 android:visibility="visible">
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/textComparaison19"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Nom"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textComparaison20"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:fontFamily="casual"
-                    android:text="Nom"
+                    android:text="Séance précédente"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textSize="15sp"
+                    android:textSize="12sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:id="@+id/textComparaison21"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="casual"
-                    android:text="Valeur"
+                    android:text="Séance actuelle"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textSize="15sp"
+                    android:textSize="12sp"
                     android:textStyle="bold" />
 
             </TableRow>
@@ -72,7 +82,7 @@
                 android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/textView10"
+                    android:id="@+id/textComparaison22"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -82,13 +92,25 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/textComparaison23"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="19 m/s"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textComparaison24"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="20 m/s"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/holo_green_dark"
                     android:textSize="15sp" />
 
             </TableRow>
@@ -101,7 +123,7 @@
                 android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/textComparaison25"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -111,13 +133,25 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView14"
+                    android:id="@+id/textComparaison26"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="35 m/s"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textComparaison27"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="32 m/s"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/holo_red_dark"
                     android:textSize="15sp" />
 
             </TableRow>
@@ -130,7 +164,7 @@
                 android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/textView15"
+                    android:id="@+id/textComparaison28"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -140,13 +174,25 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView16"
+                    android:id="@+id/textComparaison29"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="110"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textComparaison30"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="105"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/holo_red_dark"
                     android:textSize="15sp" />
 
             </TableRow>
@@ -159,7 +205,7 @@
                 android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/textView17"
+                    android:id="@+id/textComparaison31"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -169,13 +215,25 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView18"
+                    android:id="@+id/textComparaison32"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="85"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textComparaison33"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="75"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/holo_red_dark"
                     android:textSize="15sp" />
 
             </TableRow>
@@ -188,7 +246,7 @@
                 android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/textView19"
+                    android:id="@+id/textComparaison34"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -198,13 +256,25 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView20"
+                    android:id="@+id/textComparaison35"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="16sec"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textComparaison36"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="14sec"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/holo_green_dark"
                     android:textSize="15sp" />
 
             </TableRow>
@@ -217,7 +287,7 @@
                 android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/textView21"
+                    android:id="@+id/textComparaison37"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -227,13 +297,25 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView22"
+                    android:id="@+id/textComparaison38"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="1h 19min 24sec"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textComparaison39"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="1h 26min 36sec"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/holo_green_dark"
                     android:textSize="15sp" />
 
             </TableRow>
@@ -246,7 +328,7 @@
                 android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/textView11"
+                    android:id="@+id/textComparaison40"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -256,13 +338,25 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView12"
+                    android:id="@+id/textComparaison41"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="7.5"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textComparaison42"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="7.6"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/holo_green_dark"
                     android:textSize="15sp" />
 
             </TableRow>

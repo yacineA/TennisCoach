@@ -34,7 +34,10 @@
             android:name=".coup_details"
             android:label="@string/title_activity_coup_details"
             android:theme="@style/MyTheme.NoActionBar" />
-        <activity android:name=".seance_heure"></activity>
+        <activity
+            android:name=".Comparaison_stats"
+            android:label="@string/title_activity_comparaison_stats"
+            android:theme="@style/MyTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
