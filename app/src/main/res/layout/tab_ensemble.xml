@@ -13,7 +13,8 @@
         android:layout_height="match_parent"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_above="@+id/button_exercice_specifique">
+        android:layout_above="@+id/button_exercice_specifique"
+        tools:ignore="UnknownIdInLayout,UselessParent">
 
         <TableLayout
             android:layout_width="match_parent"
@@ -24,7 +25,8 @@
             android:layout_alignParentTop="true"
             android:baselineAligned="false"
             android:orientation="vertical"
-            android:scrollbars="horizontal">
+            android:scrollbars="horizontal"
+            tools:ignore="ObsoleteLayoutParam">
 
             <TableRow
                 android:layout_width="match_parent"
@@ -44,11 +46,12 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="casual"
-                    android:text="Nom"
+                    android:text="@string/nom"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:textSize="15sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:targetApi="jelly_bean" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -60,7 +63,9 @@
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:textSize="15sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:targetApi="jelly_bean"
+                    tools:ignore="HardcodedText" />
 
             </TableRow>
 
@@ -76,7 +81,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Vitesse moyenne de la balle des deux joueurs"
+                    android:text="@string/vitesse_moyenne_de_la_balle_des_deux_joueurs"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textSize="14sp" />
@@ -89,7 +94,8 @@
                     android:text="20 m/s"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
 
             </TableRow>
 
@@ -105,7 +111,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Vitesse maximale de la balle"
+                    android:text="@string/vitesse_maximale_de_la_balle"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textSize="14sp" />
@@ -118,7 +124,8 @@
                     android:text="32 m/s"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
 
             </TableRow>
 
@@ -134,7 +141,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Nombre de coups droits"
+                    android:text="@string/nombre_de_coups_droits"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textSize="14sp" />
@@ -147,7 +154,8 @@
                     android:text="105"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
 
             </TableRow>
 
@@ -166,7 +174,8 @@
                     android:text="Nombre de coups gauches"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
 
                 <TextView
                     android:id="@+id/textView18"
@@ -176,7 +185,8 @@
                     android:text="75"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
 
             </TableRow>
 
@@ -195,7 +205,8 @@
                     android:text="Temps moyen entre les échanges"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
 
                 <TextView
                     android:id="@+id/textView20"
@@ -205,7 +216,8 @@
                     android:text="14sec"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
 
             </TableRow>
 
@@ -224,7 +236,8 @@
                     android:text="Durée totale de l'exercice"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
 
                 <TextView
                     android:id="@+id/textView22"
@@ -234,7 +247,8 @@
                     android:text="1h 26min 36sec"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
 
             </TableRow>
 
@@ -250,7 +264,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Performance totale sur 10"
+                    android:text="@string/performance_totale_sur_10"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textSize="14sp" />
@@ -263,7 +277,8 @@
                     android:text="7.6"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
 
             </TableRow>
 

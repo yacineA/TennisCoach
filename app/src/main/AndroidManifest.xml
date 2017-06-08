@@ -15,28 +15,38 @@
         android:theme="@style/MyTheme">
         <activity
             android:name=".LoginActivity"
-            android:label="@string/app_name">
+            android:label="Connexion">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Inscription" />
-        <activity android:name=".menu" />
-        <activity android:name=".ListeExercices" />
-        <activity android:name=".ListeCoups" />
-        <activity android:name=".exercice_details" />
+        <activity android:name=".Inscription"
+            android:label="Inscription"/>
+        <activity android:name=".menu"
+            android:label="" />
+        <activity android:name=".ListeExercices"
+            android:label="Liste des exercices" />
+        <activity android:name=".ListeCoups"
+            android:label="Liste des coups" />
+        <activity android:name=".seance"
+            android:label="Séance d'une heure"
+            />
         <activity
             android:name=".Statistiques"
+            android:label="Statistiques"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".coup_details"
-            android:label="@string/title_activity_coup_details"
-            android:theme="@style/MyTheme.NoActionBar" />
+            android:label="Coup à travailler" />
+       <activity
+            android:name=".exercice_details"
+            android:label="Exercice spécifique" />
+
         <activity
             android:name=".Comparaison_stats"
-            android:label="@string/title_activity_comparaison_stats"
+            android:label="Comparaison des statistiques"
             android:theme="@style/MyTheme.NoActionBar"></activity>
     </application>
 

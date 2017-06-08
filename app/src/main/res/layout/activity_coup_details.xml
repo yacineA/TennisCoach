@@ -91,7 +91,7 @@
                 android:textAlignment="center"
                 android:textSize="14sp"
                 android:textStyle="bold"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
         </LinearLayout>
     </ScrollView>
 

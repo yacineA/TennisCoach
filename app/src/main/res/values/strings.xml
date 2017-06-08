@@ -33,4 +33,14 @@
     <string name="title_activity_coup_details">coup_details</string>
     <string name="title_activity_comparaison_stats">Comparaison_stats</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="nom">Nom</string>
+    <string name="nombre_de_coups_droits">Nombre de coups droits</string>
+    <string name="performance_totale_sur_10">Performance totale sur 10</string>
+    <string name="vitesse_maximale_de_la_balle">Vitesse maximale de la balle</string>
+    <string name="vitesse_moyenne_de_la_balle_des_deux_joueurs">Vitesse moyenne de la balle des deux joueurs</string>
+    <string name="_34">34</string>
+    <string name="endurance">Endurance</string>
+    <string name="nombre_de_coups_droitss">Nombre de coups droits</string>
+    <string name="vitesse_maximale_de_la_ballee">Vitesse maximale de la balle</string>
+    <string name="vitesse_moyenne_de_la_balle">Vitesse moyenne de la balle</string>
 </resources>

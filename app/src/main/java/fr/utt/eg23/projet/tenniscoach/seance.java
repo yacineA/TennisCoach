@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class seance_heure extends AppCompatActivity {
+public class seance extends AppCompatActivity {
 
     TextView timerTextView;
     long startTime = 0;
@@ -65,7 +65,7 @@ public class seance_heure extends AppCompatActivity {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
                 // Création d’une activité associée à l’exécution de MaGestionListe.class
-                Intent intent = new Intent(seance_heure.this, Statistiques.class);
+                Intent intent = new Intent(seance.this, Statistiques.class);
                 // Exécution de l’activité : ouverture de la fenêtre
                 startActivity(intent);
             }
